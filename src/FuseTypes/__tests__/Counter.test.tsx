@@ -4,8 +4,8 @@ import Counter from '../Counter';
 describe('Counter tests', () => {
   beforeEach(() => {
     // clear state is a method that comes on all FuseTypes
-    act(() => Counter.clearState())
-  })
+    act(() => Counter.clearState());
+  });
   describe('When incrementing the counter twice', () => {
     it('should have set the state count to 2', () => {
       act(() => Counter.increment());
